@@ -1,0 +1,53 @@
+.search-container {
+  height: 300px;
+  background: url('https://www.themoviedb.org/t/p/w1920_and_h600_multi_faces_filter(duotone,032541,01b4e4)/hPea3Qy5Gd6z4kJLUruBbwAH8Rm.jpg') top center;
+  background-size: cover;
+  padding: 20px;
+  color: #FFFFFF;
+
+  .input-container {
+    position: relative;
+    input {
+      padding: 20px 0;
+      border-radius: 100px;
+      border: none;
+      width: 100%;
+      padding-left: 20px;
+      box-sizing: border-box;
+
+      &:focus {
+        outline: none;
+      }
+    }
+    button {
+      position: absolute;
+      top: 0;
+      right: 0;
+      background: #fff;
+      border: none;
+      padding: 20px 40px;
+      cursor: pointer;
+      border-radius: 50px;
+      background: linear-gradient(to right, rgba(30,213,169, 1) 0%, rgba(1,180,228, 1) 100%);
+      color: #fff;
+
+      &:hover {
+        color: #000;
+      }
+    }
+
+    .last-search-items {
+      display: none;
+      background: #FFF;
+      color: #000;
+      margin: 0 30px;
+      padding: 10px;
+      border-radius: 0 0 10px 10px;
+    }
+
+    input:focus ~ .last-search-items {
+      display: block;
+    }
+  }
+
+}

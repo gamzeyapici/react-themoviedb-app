@@ -1,0 +1,27 @@
+.movie-detail-page-container {
+
+  .backdrop {
+    opacity: 0.6;
+    position: absolute;
+    left: 0;
+    top: 40px;
+    width: 100%;
+    height: 100%;
+    background: #000;
+  }
+
+  .front-side {
+    position: absolute;
+    left: 0;
+    top: 40px;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    display: flex;
+    color: #FFF;
+
+    .movie-item-info {
+      margin-left: 20px
+    }
+  }
+}
